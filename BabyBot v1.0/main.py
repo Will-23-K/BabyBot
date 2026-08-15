@@ -4,20 +4,21 @@ names = []
 ai_basic_details = ("BabyBot",)
 
 greetings = {
-    "hello",
-    "hi",
-    "hey",
-    "yo",
-    "good morning"
+    "hello", "hi", "hey", "yo", "good morning",
+    "good afternoon", "good evening", "howdy", "hiya", "heya",
+    "hey there", "hi there", "hello there", "greetings", "sup",
+    "what's up", "whats up", "wassup", "how are you", "how's it going",
+    "hows it going", "how are things", "welcome", "morning", "afternoon",
+    "evening", "good day", "salutations", "hey hey", "hey buddy"
 }
 
 salutations = {
-    "bye",
-    "farewell",
-    "goodbye",
-    "bye bye",
-    "chat later",
-    "later"
+    "bye", "farewell", "goodbye", "bye bye", "chat later", "later",
+    "see you", "see ya", "see you later", "catch you later", "take care",
+    "have a good day", "have a nice day", "until next time", "talk soon",
+    "talk to you later", "gotta go", "got to go", "I'm off", "I'm out",
+    "peace", "peace out", "see ya soon", "see you soon", "good night",
+    "have a good night"
 }
 
 #Greet the user
