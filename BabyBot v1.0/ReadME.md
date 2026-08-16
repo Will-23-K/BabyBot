@@ -1,34 +1,19 @@
 PROJECT NAME:  BabyBot
 
-BabyBot v1
-Rule-based
-      ↓
-BabyBot v2
-Intent detection
-      ↓
-BabyBot v3
-NLP preprocessing
-      ↓
-BabyBot v4
-ML intent classifier
-      ↓
-BabyBot v5
-Neural network
-      ↓
-BabyBot v6
-Transformer
-      ↓
-BabyBot v7
-RAG
-      ↓
-BabyBot v8
-Agent
-      ↓
-BabyBot v9
-Efficient agent
-      ↓
-BabyBot v10
-Green AI optimized
+BabyBot v1 -> Rule-based
+BabyBot v2 -> Intent detection
+
+BabyBot v3 -> NLP preprocessing
+BabyBot v4 -> ML intent classifier
+
+BabyBot v5 -> Neural network
+BabyBot v6 -> Transformer
+
+BabyBot v7 -> RAG
+BabyBot v8 -> Agent
+
+BabyBot v9 -> Efficient agent
+BabyBot v10 -> Green AI optimized
 
 
 Babybot Version 1.0 - RULE-BASED AI AGENT
