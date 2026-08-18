@@ -1,4 +1,4 @@
-#List, Tuples, Set
+# List, Tuple, Set
 names = []
 
 ai_basic_details = ("BabyBot",)
@@ -21,45 +21,66 @@ salutations = {
     "have a good night"
 }
 
-#Greet the user
-print("BabyBot: Hello, I am Babyot")
+#Functions
+def greet_user():
+    print("BabyBot: Hello, I am BabyBot")
+    print("What is your name?")
 
-#Ask for user's name
-print("What is your name?")
-userName = input().capitalize()
-names.append(userName)
-you = names[0]
-print(f"{you}: {userName}")
 
-#Remember user's name
+def get_user_name():
+    userName = input().capitalize()
+    names.append(userName)
+    return userName
 
-print(f"BabyBot: Hello there {userName} ")
 
-#Respond to basic commands
-while True:
-    userInput = input(f"{you}: ").lower()
+def introduce_user(userName):
+    print(f"{userName}: {userName}")
+    print(f"BabyBot: Hello there {userName}")
 
+
+def respond_to_input(userInput, userName):
+    
     if userInput == "how are you":
         print("BabyBot: I am doing good. How are you?")
+        return True
 
     elif userInput in greetings:
-        print(f"BabyBot: Hello there {userName}, How can I assist you today?")
+        print(f"BabyBot: Hello there {userName}, how can I assist you today?")
+        return True
 
     elif userInput == "what is your name":
         print(f"BabyBot: {ai_basic_details[0]}, a rule based assistant.")
+        return True
 
     elif userInput == "what is my name":
-        print(f"BabyBot: your name is {userName}!")
+        print(f"BabyBot: Your name is {userName}!")
+        return True
 
     elif userInput == "what can you do":
-        print("I can help you discuss your thoughts and provide helpful tips")
-
-    #elif greetings in userInput:
-    #   print(f"BabyBot: Hello there {userName}, How can I assist you today?")
+        print("BabyBot: I can help you discuss your thoughts and provide helpful tips.")
+        return True
 
     elif userInput in salutations:
         print("BabyBot: Goodbye!")
-        break
+        return False
 
     else:
-        print("I don't understand that yet!")
+        print("BabyBot: I don't understand that yet!")
+        return True
+
+
+def chat(userName):
+    while True:
+        userInput = input(f"{userName}: ").lower()
+
+        if not respond_to_input(userInput, userName):
+            break
+
+#Main
+greet_user()
+
+userName = get_user_name()
+
+introduce_user(userName)
+
+chat(userName)
